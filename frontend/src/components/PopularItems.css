@@ -1,0 +1,71 @@
+.popular-items {
+  padding: 20px;
+  background-color: #f9f9f9; /* Optional: Light background for the section */
+}
+
+.popular-items h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.scroll-buttons {
+  position: relative; /* Position relative to the container */
+}
+
+.scroll-left,
+.scroll-right {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  width: 50px; /* Make the button circular */
+  height: 50px; /* Make the button circular */
+  font-size: 20px; /* Increase font size for arrows */
+  cursor: pointer;
+  border-radius: 50%; /* Make the buttons round */
+  display: flex;
+  align-items: center; /* Center the arrow vertically */
+  justify-content: center; /* Center the arrow horizontally */
+  position: absolute; /* Position the buttons absolutely */
+  top: 0%; /* Align to the middle of the card height */
+  transform: translateY(150%); /* Center the button vertically */
+  z-index: 1; /* Ensure buttons are above the cards */
+}
+
+.scroll-left {
+  left: 10px; /* Position the left button closer to the cards */
+}
+
+.scroll-right {
+  right: 10px; /* Position the right button closer to the cards */
+}
+
+.scroll-left:hover,
+.scroll-right:hover {
+  background-color: #0056b3;
+}
+
+.cards-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 10px; /* Space between cards */
+  padding: 0 40px; /* Reduce left and right padding */
+  margin: 0 10px;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  position: relative; /* Make the container relative for button positioning */
+    /* border: 1px solid red; */
+}
+
+.card {
+  min-width: 250px; /* Keep the width of the cards */
+  height: 200px; /* Keep the height of the cards */
+  background-color: #ddd; /* Placeholder background color */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  font-size: 20px; /* Keep font size for card content */
+  color: #555;
+  border-radius: 10px; /* Optional: Slightly larger rounded corners */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a stronger shadow */
+}

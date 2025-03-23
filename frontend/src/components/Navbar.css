@@ -1,0 +1,48 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Space between left and right groups */
+  padding: 10px 20px; /* Add some padding for spacing */
+  background-color: #f8f9fa; /* Optional: Add a background color */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center; /* Align logo and links vertically */
+}
+
+.navbar-logo img {
+  height: 50px; /* Adjust the logo size */
+  margin-right: 20px; /* Add spacing between the logo and links */
+}
+
+.navbar-links {
+  display: flex; /* Align links horizontally */
+  list-style: none; /* Remove default list styling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.navbar-links li {
+  margin: 0 15px; /* Add spacing between links */
+}
+
+.navbar-links a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set link color */
+  font-weight: bold; /* Optional: Make the text bold */
+}
+
+.navbar-links a:hover {
+  color: #007bff; /* Optional: Change color on hover */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center; /* Align cart and login vertically */
+}
+
+.navbar-right li {
+  margin-left: 15px; /* Add spacing between cart and login */
+}

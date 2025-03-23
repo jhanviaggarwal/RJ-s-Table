@@ -1,0 +1,67 @@
+.picture-wall {
+  padding: 20px;
+  background-color: #f9f9f9; /* Optional: Light background for the section */
+  text-align: center;
+}
+
+.picture-wall h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.collage {
+  width: 100%; /* Full width of the container */
+  max-width: 800px; /* Optional: Limit the max width */
+  height: 400px; /* Fixed height for the collage */
+  margin: 0 auto; /* Center the collage */
+  position: relative; /* Enable positioning for child images */
+  background-color: #eee; /* Optional: Background color for the collage */
+  border-radius: 10px; /* Optional: Rounded corners */
+  overflow: hidden; /* Ensure images don't overflow the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.collage img {
+  position: absolute; /* Position images absolutely within the collage */
+  border-radius: 5px; /* Optional: Add rounded corners to images */
+  object-fit: cover; /* Ensure images cover their allocated space */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+/* Position each image in the collage */
+.collage img:nth-child(1) {
+  top: 10px;
+  left: 10px;
+  width: 40%;
+  height: 40%;
+}
+
+.collage img:nth-child(2) {
+  top: 10px;
+  right: 10px;
+  width: 40%;
+  height: 40%;
+}
+
+.collage img:nth-child(3) {
+  bottom: 10px;
+  left: 10px;
+  width: 40%;
+  height: 40%;
+}
+
+.collage img:nth-child(4) {
+  bottom: 10px;
+  right: 10px;
+  width: 40%;
+  height: 40%;
+}
+
+.collage img:nth-child(5) {
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  height: 30%;
+  transform: translate(-50%, -50%);
+}
